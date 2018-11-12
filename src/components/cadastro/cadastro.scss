@@ -1,0 +1,62 @@
+cadastro {
+    
+    
+    ion-header {
+        
+    }
+    
+    ion-nav {
+    }
+    
+    ion-navbar {
+    }
+    
+    ion-app {
+      background: blue !important;
+    }
+
+    ion-content{
+        div.group-input{
+            //padding-bottom: 10px;
+            padding-bottom: 20px;
+        }
+        
+        .labelsForm{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            color: #FFFFFF;
+            background:transparent;
+        }
+        
+        ion-item.box-input {
+            border-radius: 3px;
+            padding-top: 2px;
+            font-family: 'Courier New', Courier, monospace;
+            width: 100%;
+            height: 0.002em;
+            color: #FFFFFF;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid transparent;
+          
+            ::placeholder {
+              color: #FFFFFF;
+            }
+          
+        }
+
+        ion-item.box-button {
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            width: 100%;
+            background: rgba(76, 175, 80, 0.1);
+            border: 2px solid #FFFFFF;
+            color: #FFFFFF;
+            height: 0.6em;
+            text-align: center;
+          
+        }
+
+    }    
+
+    
+}

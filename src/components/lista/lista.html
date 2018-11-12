@@ -1,0 +1,29 @@
+<ion-header>
+  
+    <ion-navbar #navBar transparent="true">
+  
+       <ion-title ><span class="white-color">{{titulo}}</span></ion-title>
+    </ion-navbar>
+    
+  
+  </ion-header>
+  
+  <ion-content>
+  
+    <section>
+      <form>
+      
+        <ion-list>
+          <ion-item *ngFor="let toDo of listaToDo">
+            <ion-label item-left>Descrição</ion-label>
+            <ion-img item-right width="30px" src="build/assets/imgs/excluir.png" ></ion-img>
+          </ion-item>
+        </ion-list>
+  
+      </form>
+    </section>
+  </ion-content>
+  
+  <ion-footer style="margin-bottom:20px;">
+      <button  ion-button block type="button" (tap)="novo()">NOVO ITEM</button>
+  </ion-footer>

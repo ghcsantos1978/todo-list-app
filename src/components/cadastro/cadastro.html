@@ -1,0 +1,42 @@
+
+<ion-header>
+  
+  <ion-navbar #navBar transparent="true">
+
+     <ion-title ><span class="white-color">{{titulo}}</span></ion-title>
+  </ion-navbar>
+  
+
+</ion-header>
+
+<ion-content>
+
+  <section>
+    <form>
+    
+    <div class="group-input">
+      <ion-item>
+        <ion-label floating>Descrição</ion-label>
+        <ion-input [(ngModel)] = "toDo.descricao" [ngModelOptions]="{standalone: true}" ></ion-input>
+      </ion-item>
+    </div>
+
+    <div>
+      
+    </div>  
+
+    <div class="group-input">
+      <ion-item>
+        <ion-label floating>Data</ion-label>
+        <ion-input type="tel" [brmasker]="{mask:'00/00/0000', len:10, type: 'num'}"  [(ngModel)] = "toDo.data" [ngModelOptions]="{standalone: true}" ></ion-input>
+      </ion-item>
+    </div>
+
+  </form>
+  </section>
+</ion-content>
+
+<ion-footer>
+    <button  ion-button block type="button" (tap)="salvar()">SALVAR</button>
+    <button  ion-button block type="button" (tap)="listar()">LISTA</button>
+</ion-footer>
