@@ -15,8 +15,8 @@
       
         <ion-list>
           <ion-item *ngFor="let toDo of listaToDo">
-            <ion-label item-left>Descrição</ion-label>
-            <ion-img item-right width="30px" src="build/assets/imgs/excluir.png" ></ion-img>
+            <ion-label item-left>{{toDo.descricao}}  -  {{toDo.data}}</ion-label>
+            <img (click)="excluir(toDo);" item-right width="30px" src="build/assets/imgs/excluir.png"/>
           </ion-item>
         </ion-list>
   

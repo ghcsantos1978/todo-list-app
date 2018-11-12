@@ -24,7 +24,7 @@ export class ToDo{
     }
 
     public setDescricao(descricao:string){
-
+        this.descricao = descricao;
     }
 
     public setData(data:string){

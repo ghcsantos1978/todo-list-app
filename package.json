@@ -57,5 +57,9 @@
     "platforms": [
       "android"
     ]
+  },
+  "config": {
+    "ionic_sass": "./config/sass.config.js",
+    "ionic_copy": "./config/copy.config.js"
   }
 }
